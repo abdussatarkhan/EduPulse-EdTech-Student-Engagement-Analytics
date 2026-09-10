@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "edupulse_edtech_student_engagement_analytics"
+version = "1.0.0"
+description = "Higher-Ed & Online Learning Platform Analytics Data Warehouse: Course completion funnels, video engagement drop-off heatmaps, quiz failure correlation, and student mastery paths."
+readme = "README.md"
+authors = [
+    { name = "Abdussatar", email = "satarabdus692@gmail.com" }
+]
+license = { text = "MIT" }
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Information Analysis"
+]
