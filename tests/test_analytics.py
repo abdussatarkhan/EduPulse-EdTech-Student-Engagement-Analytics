@@ -8,7 +8,8 @@ import numpy as np
 def test_completion_rate_math():
     completed = 7480
     enrolled = 10000
-    assert (completed / enrolled) * 100.0 == 74.8
+    assert round((completed / enrolled) * 100.0, 2) == pytest.approx(74.8)
+
 
 def test_csat_bounds():
     csat = 4.82
@@ -18,7 +19,8 @@ def test_csat_bounds():
 def test_sla_compliance_bounds():
     compliant = 9400
     total = 10000
-    assert (compliant / total) * 100.0 == 94.0
+    assert round((compliant / total) * 100.0, 2) == pytest.approx(94.0)
+
 
 def test_data_integrity():
     metric_val = 1420.50
